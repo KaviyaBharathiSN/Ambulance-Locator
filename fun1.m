@@ -1,0 +1,16 @@
+% Compute the value of the integrand at 2*pi/3.
+x = 2*pi/3;
+y = myIntegrand(x)
+
+% Compute the area under the curve from 0 to pi.
+xmin = 0;
+xmax = pi;
+f = @myIntegrand;
+a = integral(f,xmin,xmax)
+
+function y = myIntegrand(x)
+y = sin(x).^3;
+end
+
+
+d=sqrt(((input(c,1)-centroid(r,1))*(input(c,1)-centroid(r,1)))+((input(c,2)-centroid(r,2))*(input(c,2)-centroid(r,2))));
